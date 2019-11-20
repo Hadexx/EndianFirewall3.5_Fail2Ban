@@ -1,0 +1,31 @@
+Jaroslaw Zdrzalek wrote on 23.07.2010 12:18:
+> hi,
+>
+> recentry a customer asked me to stop that annoying brute force attacks
+> to the ssh console. There are diffrent ways to do so but I got good results
+> using fail2ban on debian servers. So why not to use it on efw too.
+>
+> Here comes the efw rpm package tested with efw community edition 2.3.
+> ssh port 22 and https port 10443 should work out of the box and
+> stop attackers after three failed logins.
+>
+> other configurations are unchanged, so you may want to have a look at
+> /var/efw/fail2ban/jail.conf
+>
+> to install do:
+> ---------------------------------------------------------------------------
+> # login to ssh console of the efw
+> ssh myefw
+> # download the rpm package
+> curl https://zimbra.silpion.de:443/home/zdrzalek@.../Briefcase/efw/fail2ban-0.8.4-1.noarch.rpm>;  fail2ban-0.8.4-1.noarch.rpm
+> # install the package
+> rpm -ivh fail2ban-0.8.4-1.noarch.rpm
+> ---------------------------------------------------------------------------
+>
+> No guaranty.
+>
+> have fun ...
+>
+>
+> Jaroslaw Zdrzalek - Silpion IT-Solutions GmbH
+>
